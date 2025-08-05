@@ -62,5 +62,5 @@ Gunakan akun berikut untuk login:
 
 -   **Backend:** Laravel 12
 -   **Frontend:** Bootstrap 5, Vite
--   **Database:** SQLite
+-   **Database:** MySQL
 -   **Authentication:** Laravel UI
