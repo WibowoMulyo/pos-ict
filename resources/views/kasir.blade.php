@@ -17,7 +17,6 @@
         </div>
     @endif
 
-    <!-- Form Tambah Barang ke Keranjang -->
     <div class="card mb-4">
         <div class="card-header">
             Tambah Barang ke Keranjang
@@ -48,7 +47,6 @@
         </div>
     </div>
 
-    <!-- Tabel Keranjang -->
     <div class="card">
         <div class="card-header">
             Keranjang Belanja
@@ -66,7 +64,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Data keranjang akan ditambahkan via JS -->
                 </tbody>
             </table>
         </div>
@@ -115,7 +112,6 @@
 
         renderKeranjang();
 
-        // Reset form
         selectBarang.value = '';
         document.getElementById('jumlah').value = 1;
     }

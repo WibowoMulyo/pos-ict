@@ -6,7 +6,6 @@ use App\Models\Barang;
 use App\Models\DetailTransaksi;
 use App\Models\Transaksi;
 use Carbon\Carbon;
-use Illuminate\Container\Attributes\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -43,14 +42,14 @@ class KasirController extends Controller
                 $totalBarang += $item['jumlah'];
             }
 
-            // Simpan transaksi utama
+            // Save transaksi utama
             $transaksi = Transaksi::create([
                 'tanggal' => Carbon::now(),
                 'total_barang' => $totalBarang,
                 'total_harga' => $totalHarga,
             ]);
 
-            // Simpan detail transaksi
+            // Save detail transaksi
             foreach ($keranjang as $item) {
                 DetailTransaksi::create([
                     'id_transaksi' => $transaksi->id,

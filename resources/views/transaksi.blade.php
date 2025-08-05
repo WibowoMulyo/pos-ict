@@ -5,14 +5,6 @@
 
     <h2 class="mb-4">Daftar Transaksi</h2>
 
-    @php
-        // Dummy data transaksi
-        $transaksi = [
-            (object)[ 'id' => 1, 'tanggal' => '2025-08-01 14:23', 'total_barang' => 3, 'total_harga' => 16000 ],
-            (object)[ 'id' => 2, 'tanggal' => '2025-08-02 10:12', 'total_barang' => 5, 'total_harga' => 25000 ],
-        ];
-    @endphp
-
     <table class="table table-bordered table-striped">
         <thead class="table-light">
             <tr>
